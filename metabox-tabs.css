@@ -1,0 +1,51 @@
+/**
+ * Metabox Tabs
+ */
+ul.metabox-tabs {
+	display: none;
+	margin-bottom: 5px;
+	padding: 0 10px 0 10px;
+	height: 24px;
+	margin: -6px -6px 6px !important;
+	padding-top: 5px; 
+}
+ul.metabox-tabs li {
+	list-style: none;
+	display: inline;
+	font-size: 11px;
+}
+ul.metabox-tabs li.tab a {
+	display: block;
+	float: left;
+	margin-right: 4px;
+	padding: 5px 6px;
+	filter:alpha(opacity=50);
+	opacity: .5;
+	-webkit-opacity: .5;
+	-moz-opacity: .5;
+	background: #fff;
+	color: #000;
+	border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	font-weight: bold;
+	text-decoration: none;
+	zoom: 1;
+}
+ul.metabox-tabs li.tab a.active,
+ul.metabox-tabs li.tab a:hover {
+	background: #fff;
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+ul.metabox-tabs li.link {
+	margin-left: 4px;
+}
+ul.metabox-tabs li.link a {
+	text-decoration: none;
+}
+ul.metabox-tabs li.link a:hover {
+	text-decoration: underline;
+}

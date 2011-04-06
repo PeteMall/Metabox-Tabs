@@ -1,0 +1,17 @@
+/**
+ * Metabox Tabs
+ */
+ul.metabox-tabs {
+	background: #d4e3ec;
+}
+ul.metabox-tabs li.tab a {
+	color: #454545\9; /* IE8 and below */
+}
+ul.metabox-tabs li.tab a {
+	/* for some reason, opacity doesn't work in IE */
+	background: #ebf3f9\9;\9; /* IE8 and below */
+}
+ul.metabox-tabs li.tab a.active,
+ul.metabox-tabs li.tab a:hover {
+	color: #454545;
+}

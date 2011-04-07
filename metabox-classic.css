@@ -1,17 +1,12 @@
 /**
  * Metabox Tabs
  */
-ul.metabox-tabs {
-	background: #d4e3ec;
+ul.metabox-tabs li.active {
+background-color: #EFF8FF;
 }
-ul.metabox-tabs li.tab a {
-	color: #454545\9; /* IE8 and below */
+ul.metabox-tabs li.active, div.tab-content {
+border-color: #D1E5EE;
 }
-ul.metabox-tabs li.tab a {
-	/* for some reason, opacity doesn't work in IE */
-	background: #ebf3f9\9;\9; /* IE8 and below */
-}
-ul.metabox-tabs li.tab a.active,
-ul.metabox-tabs li.tab a:hover {
-	color: #454545;
+.metabox-tabs .active a {
+color: #333;
 }

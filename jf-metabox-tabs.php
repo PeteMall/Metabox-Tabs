@@ -16,14 +16,14 @@ class JF_Metabox_Tabs {
 
 	public function sample_meta_box() {
 		?>
-		<ul class="metabox-tabs">
-			<li class="tab tab1"><a class="active" href="javascript:void(null);">Tab 1</a></li>
-			<li class="tab tab2"><a href="javascript:void(null);">Tab 2</a></li>
-			<li class="tab tab3"><a href="javascript:void(null);">Tab 3</a></li>
-		</ul>
-		<div class="tab1">
-			<h4 class="heading">Tab 1</h4>
-			<div class="tab-content">
+		<div class="metabox-tabs-div">
+			<ul class="metabox-tabs" id="metabox-tabs">
+				<li class="active tab1"><a class="active" href="javascript:void(null);">Tab 1</a></li>
+				<li class="tab2"><a href="javascript:void(null);">Tab 2</a></li>
+				<li class="tab3"><a href="javascript:void(null);">Tab 3</a></li>
+			</ul>
+			<div class="tab1">
+				<h4 class="heading">Tab 1</h4>
 				<table class="form-table">
 					<tr>
 						<th scope="row"><label for="jf_input1">Input 1</label></th>
@@ -35,10 +35,8 @@ class JF_Metabox_Tabs {
 					</tr>
 				</table>
 			</div>
-		</div>
-		<div class="tab2">
-			<h4 class="heading">Tab 2</h4>
-			<div class="tab-content">
+			<div class="tab2">
+				<h4 class="heading">Tab 2</h4>
 				<table class="form-table">
 					<tr>
 						<th scope="row"><label for="jf_input3">Input 3</label></th>
@@ -50,10 +48,8 @@ class JF_Metabox_Tabs {
 					</tr>
 				</table>
 			</div>
-		</div>
-		<div class="tab3">
-			<h4 class="heading">Tab 3</h4>
-			<div class="tab-content">
+			<div class="tab3">
+				<h4 class="heading">Tab 3</h4>
 				<table class="form-table">
 					<tr>
 						<th scope="row"><label for="jf_input5">Input 5</label></th>

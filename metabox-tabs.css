@@ -1,46 +1,52 @@
-/**
- * Metabox Tabs
- */
-ul.metabox-tabs {
-display: none;
-margin-top: 12px;
-margin-bottom: 3px;
+.wp-tab-bar {
+	display: none;
 }
-.metabox-tabs-div ul {
-list-style: none;
+body.js .wp-tab-bar {
+	display: block;
 }
-.metabox-tabs li {
-display: inline;
+
+/* fix border-bottom rounding error problem. */
+#side-sortables .wp-tab-bar {
+	margin-bottom: 0px;
+	min-height: 19px;
 }
-ul.metabox-tabs li.active {
-border-style: solid solid none;
-border-width: 1px 1px 0;
+
+/* These following styles belong in core */
+#normal-sortables .wp-tab-bar a,
+#advanced-sortables .wp-tab-bar a {
+	text-decoration: underline;
 }
-ul.metabox-tabs li {
-padding: 5px;
--moz-border-radius: 3px 3px 0 0;
--webkit-border-top-left-radius: 3px;
--webkit-border-top-right-radius: 3px;
--khtml-border-top-left-radius: 3px;
--khtml-border-top-right-radius: 3px;
-border-top-left-radius: 3px;
-border-top-right-radius: 3px;
+#normal-sortables .wp-tab-bar,
+#advanced-sortables .wp-tab-bar {
+	float: left;
+	margin: 0 -120px 0 5px;
+	padding: 0;
+	text-align: right;
+	width: 120px;
 }
-.metabox-tabs a {
-text-decoration: none;
+#normal-sortables .wp-tab-bar li,
+#advanced-sortables .wp-tab-bar li {
+	padding: 8px;
+	display: list-item;
 }
-.metabox-tabs-div div.tabs-panel {
-overflow: auto;
-padding: 0.5em 0.9em;
-border-style: solid;
-border-width: 1px;
+#normal-sortables .wp-tab-active,
+#advanced-sortables .wp-tab-active {
+	border-radius: 3px 0 0 3px;
+	border-style: solid none solid solid;
+	border-width: 1px 0 1px 1px;
+	margin-right: -1px;
 }
-.heading {
-padding-left:10px;
+#normal-sortables .wp-tab-active a,
+#advanced-sortables .wp-tab-active a {
+	font-weight: bold;
+	text-decoration: none;
 }
-.tab-content{
-overflow: auto;
-padding: 0.5em 0.9em;
-border-style: solid;
-border-width: 1px;
+#normal-sortables .wp-tab-panel,
+#advanced-sortables .wp-tab-panel {
+	margin: 0 5px 0 125px;
+	border-style: solid;
+	border-width: 1px;
+	height: 200px;
+	overflow: auto;
+	padding: 0.5em 0.9em;
 }

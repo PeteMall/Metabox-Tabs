@@ -1,46 +1,6 @@
-/**
- * Metabox Tabs
- */
-ul.metabox-tabs {
-display: none;
-margin-top: 12px;
-margin-bottom: 3px;
+.wp-tab-bar {
+	display: none;
 }
-.metabox-tabs-div ul {
-list-style: none;
-}
-.metabox-tabs li {
-display: inline;
-}
-ul.metabox-tabs li.active {
-border-style: solid solid none;
-border-width: 1px 1px 0;
-}
-ul.metabox-tabs li {
-padding: 5px;
--moz-border-radius: 3px 3px 0 0;
--webkit-border-top-left-radius: 3px;
--webkit-border-top-right-radius: 3px;
--khtml-border-top-left-radius: 3px;
--khtml-border-top-right-radius: 3px;
-border-top-left-radius: 3px;
-border-top-right-radius: 3px;
-}
-.metabox-tabs a {
-text-decoration: none;
-}
-.metabox-tabs-div div.tabs-panel {
-overflow: auto;
-padding: 0.5em 0.9em;
-border-style: solid;
-border-width: 1px;
-}
-.heading {
-padding-left:10px;
-}
-.tab-content{
-overflow: auto;
-padding: 0.5em 0.9em;
-border-style: solid;
-border-width: 1px;
+body.js .wp-tab-bar {
+	display: block;
 }

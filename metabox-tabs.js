@@ -1,26 +1,15 @@
-jQuery(document).ready(function() {
-	// tab between them
-	jQuery('.metabox-tabs li a').each(function(i) {
-		var thisTab = jQuery(this).parent().attr('class').replace(/active /, '');
-
-		if ( 'active' != jQuery(this).attr('class') )
-			jQuery('div.' + thisTab).hide();
-		
-		jQuery('div.' + thisTab).addClass('tab-content');
- 
-		jQuery(this).click(function(){
-			// hide all child content
-			jQuery(this).parent().parent().parent().children('div').hide();
- 
-			// remove all active tabs
-			jQuery(this).parent().parent('ul').find('li.active').removeClass('active');
- 
-			// show selected content
-			jQuery(this).parent().parent().parent().find('div.'+thisTab).show();
-			jQuery(this).parent().parent().parent().find('li.'+thisTab).addClass('active');
-		});
+jQuery( document ).ready( function( $ ) {
+	context = $( '#test' );
+	$( '.wp-tab-bar', context ).show();
+	$( '.wp-tab-bar li:first-child', context ).addClass( 'wp-tab-active' );
+	$( '.wp-panel-heading', context ).remove();
+	$( '.wp-tab-panel', context ).hide();
+	$( '.wp-tab-panel', context ).first().show();
+	$( '.wp-tab-bar a', context ).click( function( event ){
+		event.preventDefault();
+		$( '.wp-tab-active', context ).removeClass( 'wp-tab-active' );
+		$( this ).parent().addClass( 'wp-tab-active' );
+		$( '.wp-tab-panel', context ).hide();
+		$( $( this ).attr( 'href' ) ).show();
 	});
-
-	jQuery('.heading').hide();
-	jQuery('.metabox-tabs').show();
 });
